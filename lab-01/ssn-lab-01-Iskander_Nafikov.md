@@ -16,7 +16,25 @@ I achieved this goal.
 
 So, I had wrote the text and then had encrypted it:
 ```text
-PPID MX G KQEOCEE HTRYU UM BFOWHE GTLISJZ EQY SMVF ERQJ ZVONDSQR UQ VXZJF IWN PJPMQUI AGYQXED RIFNGW TL PVCOCQSU. YLXM G ZPJBPP PBUVMTT MWA VPMROKQK FTK OAYHFH, UJHC JSIIAU ZZ A KQXVSKF WO UYAWMGGKJ-YLMTSYS AOF VONRS-JDSWPIOI. IVTS KQBMFESJPJ GTSWTNH ETEPTLIX ZV MWQLSIOI LR UXHKCSNML FZSIWOTMWDD, QADJ PIRHLZ KBTZGT C XRNWBM YOCEPFEWMAK AW CRP FACNH. XMKPZ LYWXACQUEYOCM JZADOBEK ESJ ZCYZZDTJXH ISBPZXXXQNU EUIFZL I MIYMMJE DRI KUZRMSUNH NHEWTPVP OIBESKHRHK MWA KWX. AT VKID JLTEO OQEQGU MSZV BQOTD SUWGMJY, WWPK NANUKQYJY AW RXDBISG DRI KTXXGPD EBEK SYNLZ CYHMREU DGFJLURM PJCFNOISIL IWN AQRTQQEQ MYWFDS. FOHGWLJX, APNI LDE B VLKMZ-RVRD EQAN QI PJGYVNBD, ROSILRL GOMJN ZZ TIGLV JJBKJDTANBN YSDGNM.
+PPID MX G KQEOCEE HTRYU UM BFOWHE GTLISJZ
+EQY SMVF ERQJ ZVONDSQR UQ VXZJF IWN PJPMQUI
+AGYQXED RIFNGW TL PVCOCQSU. YLXM G ZPJBPP
+PBUVMTT MWA VPMROKQK FTK OAYHFH, UJHC JSIIAU
+ZZ A KQXVSKF WO UYAWMGGKJ-YLMTSYS
+AOF VONRS-JDSWPIOI.
+IVTS KQBMFESJPJ GTSWTNH ETEPTLIX
+ZV MWQLSIOI LR UXHKCSNML FZSIWOTMWDD, QADJ
+PIRHLZ KBTZGT C XRNWBM
+YOCEPFEWMAK AW CRP FACNH.
+XMKPZ LYWXACQUEYOCM JZADOBEK ESJ ZCYZZDTJXH
+ISBPZXXXQNU EUIFZL I MIYMMJE DRI KUZRMSUNH
+NHEWTPVP OIBESKHRHK MWA KWX. AT VKID JLTEO
+OQEQGU MSZV BQOTD SUWGMJY, WWPK NANUKQYJY
+AW RXDBISG DRI KTXXGPD EBEK SYNLZ CYHMREU
+DGFJLURM PJCFNOISIL IWN AQRTQQEQ MYWFDS.
+FOHGWLJX, APNI LDE B VLKMZ-RVRD EQAN
+QI PJGYVNBD, ROSILRL GOMJN
+ZZ TIGLV JJBKJDTANBN YSDGNM.
 ```
 
 The following key was selected:
@@ -29,8 +47,28 @@ the ciphertext was easily cracked:
 
 ![vigenere-autodecrypt-short-key.png](vigenere-autodecrypt-short-key.png)
 
+The resulting plaintext:
+
 ```text
-POGA IS A DIVERSE GROUP OF TWELVE FRIENDS WHO HAVE COME TOGETHER TO STUDY AND EXPLORE VARIOUS FIELDS OF INTEREST. WITH A SHARED PASSION FOR LEARNING AND GROWTH, THEY EMBARK ON A JOURNEY OF KNOWLEDGE-SEEKING AND SKILL-BUILDING. FROM DISCUSSING COMPLEX THEORIES TO ENGAGING IN PRACTICAL EXPERIMENTS, EACH MEMBER BRINGS A UNIQUE PERSPECTIVE TO THE TABLE. THEIR COLLABORATIVE APPROACH AND SUPPORTIVE ENVIRONMENT CREATE A DYNAMIC AND ENRICHING LEARNING EXPERIENCE FOR ALL. AS THEY DELVE DEEPER INTO THEIR STUDIES, POGA CONTINUES TO INSPIRE AND EMPOWER EACH OTHER TOWARDS ACADEMIC EXCELLENCE AND PERSONAL GROWTH. TOGETHER, THEY ARE A TIGHT-KNIT TEAM OF LEARNERS, FORGING AHEAD ON THEIR EDUCATIONAL VOYAGE.
+POGA IS A DIVERSE GROUP OF TWELVE FRIENDS
+WHO HAVE COME TOGETHER TO STUDY AND
+EXPLORE VARIOUS FIELDS OF INTEREST.
+WITH A SHARED PASSION FOR LEARNING
+AND GROWTH, THEY EMBARK ON A JOURNEY
+OF KNOWLEDGE-SEEKING AND SKILL-BUILDING.
+FROM DISCUSSING COMPLEX THEORIES TO
+ENGAGING IN PRACTICAL EXPERIMENTS,
+EACH MEMBER BRINGS A UNIQUE PERSPECTIVE
+TO THE TABLE. THEIR COLLABORATIVE APPROACH
+AND SUPPORTIVE ENVIRONMENT CREATE
+A DYNAMIC AND ENRICHING LEARNING
+EXPERIENCE FOR ALL. AS THEY DELVE DEEPER
+INTO THEIR STUDIES, POGA CONTINUES TO INSPIRE
+AND EMPOWER EACH OTHER TOWARDS ACADEMIC
+EXCELLENCE AND PERSONAL GROWTH.
+TOGETHER, THEY ARE A TIGHT-KNIT TEAM OF
+LEARNERS, FORGING AHEAD ON
+THEIR EDUCATIONAL VOYAGE.
 ```
 
 However, it is clear that such a short key is not reliable at all.
@@ -77,11 +115,40 @@ This final letter is then converted back using the plugboard connections to prod
 Because the rotors rotate with each keystroke (the first rotates with each keypress, the second with every full rotation of the first, and so on), if the same key is pressed multiple times in a row, different results will be produced.
 3. My plaintext remains the same as in the previous taks:
 ```text
-poga is a diverse group of twelve friends who have come together to study and explore various fields of interest. with a shared passion for learning and growth, they embark on a journey of knowledge-seeking and skill-building. from discussing complex theories to engaging in practical experiments, each member brings a unique perspective to the table. their collaborative approach and supportive environment create a dynamic and enriching learning experience for all. as they delve deeper into their studies, poga continues to inspire and empower each other towards academic excellence and personal growth. together, they are a tight-knit team of learners, forging ahead on their educational voyage.
+poga is a diverse group of twelve friends who
+have come together to study and explore various
+fields of interest. with a shared passion
+for learning and growth, they embark on a journey
+of knowledge-seeking and skill-building.
+from discussing complex theories to engaging
+in practical experiments, each member brings a unique
+perspective to the table. their collaborative approach
+and supportive environment create a dynamic
+and enriching learning experience for all.
+as they delve deeper into their studies,
+poga continues to inspire and empower each other 
+towards academic excellence and personal growth.
+together, they are a tight-knit team of learners,
+forging ahead on their educational voyage.
 ```
 The cipher text of the above is the:
 ```text
-trqf rm s jjxapjn taetf bi mrqtuw ijgbpet cne gsop mthi yzytlfms cy kknrk obo abnwpto xhxxxst anublz tb kyvpyahv. rxfj i kvnxuv bnnovbp jxx azlfovli neo zbqnwn, bvhi fbmulj jr i uetpkzx ve htemrfrvp-vazjwed olp adljp-crszrqac. kntk ptgwxekwar uhgxcdp rwxrbzla uy rosoncri mg cpgtggzzd frarxzgudzn, wwaj rljwpm zbliab y moplko aqlrntxercl zh sur lwoan. uuxnl rgkqbccyubtmh ykcclhsx dvl cpyktcsstu xuhopsqcrmo jvtiri p gqtnbmi ezj fmjlqlsec jvhcqtoc cwbtyvhhzd hjg wrt. re ibuv gqwnj jourcc aoqm bvjto ozajfhu, shus vxffgeqtj rl mxkoyin hdp ccfvbop rgou vydxf lvrxnre ynbyirvv xbwhaicgsl wpk tllqtfru xgphyz. qjoopynt, llfz keu f chrie-aqsm oupf xt ptxkrqvk, njgdrpm ionjo pg vqsng tqgtfepcuxu bqsvuc.
+trqf rm s jjxapjn taetf bi mrqtuw ijgbpet cne
+gsop mthi yzytlfms cy kknrk obo abnwpto xhxxxst
+anublz tb kyvpyahv. rxfj i kvnxuv bnnovbp
+jxx azlfovli neo zbqnwn, bvhi fbmulj jr i uetpkzx
+ve htemrfrvp-vazjwed olp adljp-crszrqac.
+kntk ptgwxekwar uhgxcdp rwxrbzla uy rosoncri mg
+cpgtggzzd frarxzgudzn, wwaj rljwpm zbliab y
+moplko aqlrntxercl zh sur lwoan.
+uuxnl rgkqbccyubtmh ykcclhsx dvl cpyktcsstu
+xuhopsqcrmo jvtiri p gqtnbmi ezj fmjlqlsec
+jvhcqtoc cwbtyvhhzd hjg wrt.
+re ibuv gqwnj jourcc aoqm bvjto ozajfhu,
+shus vxffgeqtj rl mxkoyin hdp ccfvbop rgou vydxf
+lvrxnre ynbyirvv xbwhaicgsl wpk tllqtfru xgphyz.
+qjoopynt, llfz keu f chrie-aqsm oupf xt ptxkrqvk,
+njgdrpm ionjo pg vqsngtqgtfepcuxu bqsvuc.
 ```
 
 The tools for encryption/decryption I have used: https://cryptii.com/pipes/enigma-machine.
