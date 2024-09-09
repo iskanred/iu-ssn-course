@@ -128,12 +128,13 @@
 		efibootmgr -v | grep shim
 		```
 	* **Output**:
-		```
+		```text
 		Boot0006* ubuntu  HD(4,GPT,256f04f1-0d7a-4b70-b0db-6c8c8daa66f6,0x3a220800,0x32000)/File(\EFI\ubuntu\shimx64.efi)
 		```
-	We can see that the current boot optioт `Boot0006` points to `\EFI\ubuntu\shimx64.efi` which is a full path to the shim boot loader.
-	Now we can check `/boot/efi/` directory and fine the `/boot/efi/EFI/ubuntu/shimx64.efi` executable.
 	
+	We can see that the current boot option `Boot0006` points to `\EFI\ubuntu\shimx64.efi` which is a full path to the shim boot loader.
+	Now we can check `/boot/efi/` directory and fine the `/boot/efi/EFI/ubuntu/shimx64.efi` executable.
+
 4. Verify that the shim bootloader is indeed signed with the “Microsoft Corporation UEFI CA” key
 	* Let's check it with help of `sbverify`. Since it uses PEM certificate format to check, let's firstly convert the Microsoft certificate from DER to PEM format. We can perform it using `openssl x509 -in dbcert-3.der -inform DER -out dbcert-3.pem`
 	* After that, let's verify the bootloader:
