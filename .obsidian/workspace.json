@@ -1,0 +1,156 @@
+{
+  "main": {
+    "id": "bfdcec077c6255ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "96cbf6f53b85d5de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81c93f03242c5ca6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lab-02/ssn-lab-02-Iskander_Nafikov.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cb3fcaa017df14ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "de212c0da5695c7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bd3b7a32fa9e808",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5531ecb491bc507f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e60087e9635d5aff",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 239.5
+  },
+  "right": {
+    "id": "71cbff22864cf429",
+    "type": "split",
+    "children": [
+      {
+        "id": "764d062fe35a845d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76a7f86766549185",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "lab-02/ssn-lab-02-Iskander_Nafikov.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bfdbacf335c2a229",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "lab-02/ssn-lab-02-Iskander_Nafikov.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5b56ec427e035797",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "43754338d432e94b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "lab-02/ssn-lab-02-Iskander_Nafikov.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "81c93f03242c5ca6",
+  "lastOpenFiles": [
+    "lab-01/enigma.png",
+    "2024-09-09.md",
+    "lab-02/ssn-lab-02-Iskander_Nafikov.md",
+    "lab-01/ssn-lab-01-Iskander_Nafikov.md"
+  ]
+}
