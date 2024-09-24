@@ -1,4 +1,4 @@
-# SSN Lab-01
+# SSN Lab-02
 
 * **Name**: Iskander Nafikov
 * **E-mail**: i.nafikov@innopolis.university
