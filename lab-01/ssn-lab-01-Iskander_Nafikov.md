@@ -103,7 +103,7 @@ Finally, the most famous story is that outstanding mathematician, Alan Turing, h
 to crack the Enigma cipher. The interesting fact that was helped to crack the cipher is that no letter can be
 encrypted into the same letter (e.g. `A` letter from the plaintext can be any letter in the ciphertext excepting the `A` itself).
 
-    ![enigma.png](enigma.png)
+![enigma.png](enigma.png)
     
 2. In the picture below we see the plugboard in the front of the machine.
 Also, we can see the rotors (metallic gears in the top).
