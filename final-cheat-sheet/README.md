@@ -48,14 +48,14 @@ Message => sequence of bits in ASCII => xor random key = ciphertext
 - Typically trade-off between complexity of round function $F$ and number of rounds
 ###### Modes
 * ***ECB (electronic code book)**: If plaintext blocks are encrypted like this: $C_{i} = E(P_i, K)$, then:
-	![[Pasted image 20241015230401.png]]
+	![[./2.png]]
 	*  (-) Does not solve the problem with changing the order of ciphertext blocks (Trudy got 1000$ while Alice only 2$)
 * **CBC (cipher block chaining)**: $C_{i} = E (P_{i} \oplus C_{i-1}, K)$ and $C_{0}=E(P_{0} \oplus IV, K)$
 	* $IV$ randomly generated and send as the 1st "ciphertext" block.
-	![[Pasted image 20241015230821.png]]
+	![[./3.png]]
 	* (+) Helps to solve data **integrity** problem - MAC
 	* (+) If single bit error occurs plaintext may be unrecoverable, but in fact only two blocks of the plaintext are affected
-		![[Pasted image 20241015231027.png]]
+		![[./4.png]]
 	* (-) However, only 1 single-bit error affect already 2! blocks of the plaintext **which is not acceptable** in high error-rate envs such as wireless => there stream ciphers are preferred
 	* (-) Does not solve the problem with changing the order of ciphertext blocks (Trudy got 1000$ while Alice only 2$).
 - **СTR (counter)**: need to generate stream cipher keystream using block cipher: $C_i=P_{i} \oplus E(IV + i, K)$
@@ -68,7 +68,7 @@ Message => sequence of bits in ASCII => xor random key = ciphertext
 * $F(R_{i-1}, K_{i}) = ..$
 * the main concern is a **function** and rarely key
 ###### DES (Data Encryption Standard)
-* ![[Pasted image 20241015190232.png]]
+* ![[./1.png]]
 - based on **Lucifer cipher** (Feistel devloped at IBM)
 - however, DES has $2^{56}$ key variants only but was strengthen then in other terms with the help of S-boxes
 - today DES is vulnerable because of small key length
@@ -118,7 +118,7 @@ Message => sequence of bits in ASCII => xor random key = ciphertext
 - RSA + RC4 + MD5 hashing
 - data-dependent rotations (highly unusual to rely on the data as an essential part of the operation of a crypto algorithm)
 ###### TEA (Tiny Encryption Algorithms)
-* ![[Pasted image 20241015212826.png]]
+* ![[./5.png]]
 - simple
 - based on `32` bit computer architecture (32 bit words)
 - simple $F$ but large number of rounds
@@ -171,16 +171,16 @@ Message => sequence of bits in ASCII => xor random key = ciphertext
 2. Choose conversion factors
 	m = 41, n = 491
 3. Convert to general knapsack:
-	![[Pasted image 20241016001349.png]]
+	![[./6.png]]
 4. The public key is general knapscak
 	(82,123,287,83,248,373,10,471)
 5. The private key is the superincreasing knapsack together with the multiplicative inverse of the conversion factor, i.e., $m^{-1} \mod n$
 	(2,3,7,14,30,57,120,251) and  $41^{-1} \mod 491 = 12$    since   $(41 * 12) \mod 491 = 492 \mod 491 = 1$
 ###### Decryption	
-![[Pasted image 20241016002338.png]]
+![[7.png]]
 ### RSA (Rivest Shamir Adleman)
 * Based on Euler's Theorem:
-	![[Pasted image 20241016004048.png]]
+	![[./8.png]]
 * Prime numbers (`p` and `q`) must be large
 * In real world $N$ is at least $1024$ bits. Often $2048$ bits.
 * Forward search attack (guess plaintext message) is possible => private key can obtained => necessary to use padding (набивка) with random bits
@@ -205,7 +205,7 @@ Message => sequence of bits in ASCII => xor random key = ciphertext
 - $x = g^k \implies k = \log_{g}{x}$. The same is for discrete: $x = g^k \mod p$,    $p$   is prime
 - **Public key**: `g` and `p`
 - (-): suspectible for MITM - to solve it we should either encrypt the DH exchange with shared / public keys or sign the DH values with private
-* ![[Pasted image 20241016010539.png]]
+* ![[./9.png]]
 ### Elliptic Curve Cryptography
 
 ### ECC DH
