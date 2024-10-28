@@ -47,12 +47,12 @@ Message => sequence of bits in ASCII => xor random key = ciphertext
 - Contains round function $F$ and a key $K$
 - Typically trade-off between complexity of round function $F$ and number of rounds
 ###### Modes
-* ***ECB (electronic code book)**: If plaintext blocks are encrypted like this: $C_{i} = E(P_i, K)$, then:
+* **ECB (electronic code book)**: If plaintext blocks are encrypted like this: $C_{i} = E(P_i, K)$, then:
 	![](./2.png)
 	*  (-) Does not solve the problem with changing the order of ciphertext blocks (Trudy got 1000$ while Alice only 2$)
 * **CBC (cipher block chaining)**: $C_{i} = E (P_{i} \oplus C_{i-1}, K)$ and $C_{0}=E(P_{0} \oplus IV, K)$
 	* $IV$ randomly generated and send as the 1st "ciphertext" block.
-	![](./3.png)
+		![](./3.png)
 	* (+) Helps to solve data **integrity** problem - MAC
 	* (+) If single bit error occurs plaintext may be unrecoverable, but in fact only two blocks of the plaintext are affected
 		![](./4.png)
